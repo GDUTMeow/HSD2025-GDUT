@@ -1,0 +1,392 @@
+Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚ8if (!("finalizeConstruction" in ViewPU.prototype)) {
+    Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
+}
+/*
+ * Copyright (c) 2024 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+import { CommonConstants } from '../common/constants/Constants';
+// import { multiplicationTable } from '../common/utils/Method';
+import { DaffodilsNumberCustomDialog } from '../view/DaffodilsNumberCustomDialog';
+// import { IsLeapYearCustomDialog } from '../view/IsLeapYearCustomDialog';
+// import { IsPalindromicStringCustomDialog } from '../view/IsPalindromicStringCustomDialog';
+// import { MultiplicationTableCustomDialog } from '../view/MultiplicationTableCustomDialog';
+import { StandingsCustomDialog } from '../view/StandingsCustomDialog';
+class Index extends ViewPU {
+    constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
+        super(parent, __localStorage, elmtId, extraInfo);
+        if (typeof paramsLambda === "function") {
+            this.paramsGenerator_ = paramsLambda;
+        }
+        this.daffodilsNumberCustomDialogController = new CustomDialogController({
+            builder: () => {
+                let jsDialog = new DaffodilsNumberCustomDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 29, col: 14 });
+                jsDialog.setController(this.daffodilsNumberCustomDialogController);
+                ViewPU.create(jsDialog);
+                let paramsLambda = () => {
+                    return {};
+                };
+                jsDialog.paramsGenerator_ = paramsLambda;
+            },
+            alignment: DialogAlignment.Center,
+            offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+        }, this);
+        this.standingCustomDialogController = new CustomDialogController({
+            builder: () => {
+                let jsDialog = new StandingsCustomDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 44, col: 14 });
+                jsDialog.setController(this.
+                // multiplicationTableCustomDialogController: CustomDialogController | null = new CustomDialogController({
+                //   builder: MultiplicationTableCustomDialog(),
+                //   alignment: DialogAlignment.Center,
+                //   offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+                // });
+                // isPalindromicStringCustomDialogController: CustomDialogController | null = new CustomDialogController({
+                //   builder: IsPalindromicStringCustomDialog(),
+                //   alignment: DialogAlignment.Center,
+                //   offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+                // });
+                standingCustomDialogController);
+                ViewPU.create(jsDialog);
+                let paramsLambda = () => {
+                    return {};
+                };
+                jsDialog.paramsGenerator_ = paramsLambda;
+            },
+            alignment: DialogAlignment.Center,
+            offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+        }, this);
+        this.setInitiallyProvidedValue(params);
+        this.finalizeConstruction();
+    }
+    setInitiallyProvidedValue(params) {
+        if (params.daffodilsNumberCustomDialogController !== undefined) {
+            this.daffodilsNumberCustomDialogController = params.daffodilsNumberCustomDialogController;
+        }
+        if (params.standingCustomDialogController !== undefined) {
+            this.standingCustomDialogController = params.standingCustomDialogController;
+        }
+    }
+    updateStateVars(params) {
+    }
+    purgeVariableDependenciesOnElmtId(rmElmtId) {
+    }
+    aboutToBeDeleted() {
+        SubscriberManager.Get().delete(this.id__());
+        this.aboutToBeDeletedInternal();
+    }
+    // isLeapYearCustomDialogController: CustomDialogController | null = new CustomDialogController({
+    //   builder: IsLeapYearCustomDialog(),
+    //   alignment: DialogAlignment.Center,
+    //   offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+    // });
+    initialRender() {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.debugLine("entry/src/main/ets/pages/Index.ets(55:5)", "entry");
+            Column.justifyContent(FlexAlign.SpaceBetween);
+            Column.width(CommonConstants.PERCENT_FULL);
+            Column.height(CommonConstants.PERCENT_FULL);
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create({ "id": 16777221, "type": 10003, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" });
+            Text.debugLine("entry/src/main/ets/pages/Index.ets(56:7)", "entry");
+            Text.width(CommonConstants.PERCENT_NINETY);
+            Text.margin({
+                top: { "id": 16777253, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" },
+                bottom: { "id": 16777250, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" },
+                left: { "id": 16777251, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" },
+                right: { "id": 16777252, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" }
+            });
+            Text.font({ size: { "id": 16777249, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" }, weight: CommonConstants.FONT_WEIGHT_SEVEN_HUNDRED });
+        }, Text);
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.debugLine("entry/src/main/ets/pages/Index.ets(65:7)", "entry");
+            Column.width(CommonConstants.PERCENT_FULL);
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Button.createWithLabel({ "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" });
+            Button.debugLine("entry/src/main/ets/pages/Index.ets(66:9)", "entry");
+            Button.width({ "id": 16777242, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" });
+            Button.height({ "id": 16777239, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" });
+            Button.onClick(() => {
+                this.daffodilsNumberCustomDialogController?.open();
+            });
+        }, Button);
+        Button.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // Button($r('app.string.MultiplicationTable'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.multiplicationTableCustomDialogController?.open();
+            //     let result = multiplicationTable();
+            //     for (let index = 0; index < result.length; index++) {
+            //       Logger.info(result[index].toString());
+            //     }
+            //   })
+            // Button($r('app.string.IsPalindromicString'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.isPalindromicStringCustomDialogController?.open();
+            //   })
+            Button.createWithLabel({ "id": 16777232, "type": 10003, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" });
+            Button.debugLine("entry/src/main/ets/pages/Index.ets(90:9)", "entry");
+            // Button($r('app.string.MultiplicationTable'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.multiplicationTableCustomDialogController?.open();
+            //     let result = multiplicationTable();
+            //     for (let index = 0; index < result.length; index++) {
+            //       Logger.info(result[index].toString());
+            //     }
+            //   })
+            // Button($r('app.string.IsPalindromicString'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.isPalindromicStringCustomDialogController?.open();
+            //   })
+            Button.width({ "id": 16777242, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" });
+            // Button($r('app.string.MultiplicationTable'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.multiplicationTableCustomDialogController?.open();
+            //     let result = multiplicationTable();
+            //     for (let index = 0; index < result.length; index++) {
+            //       Logger.info(result[index].toString());
+            //     }
+            //   })
+            // Button($r('app.string.IsPalindromicString'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.isPalindromicStringCustomDialogController?.open();
+            //   })
+            Button.height({ "id": 16777239, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" });
+            // Button($r('app.string.MultiplicationTable'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.multiplicationTableCustomDialogController?.open();
+            //     let result = multiplicationTable();
+            //     for (let index = 0; index < result.length; index++) {
+            //       Logger.info(result[index].toString());
+            //     }
+            //   })
+            // Button($r('app.string.IsPalindromicString'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.isPalindromicStringCustomDialogController?.open();
+            //   })
+            Button.margin({ top: { "id": 16777241, "type": 10002, params: [], "bundleName": "com.example.arktsalgorithm", "moduleName": "entry" } });
+            // Button($r('app.string.MultiplicationTable'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.multiplicationTableCustomDialogController?.open();
+            //     let result = multiplicationTable();
+            //     for (let index = 0; index < result.length; index++) {
+            //       Logger.info(result[index].toString());
+            //     }
+            //   })
+            // Button($r('app.string.IsPalindromicString'))
+            //   .width($r('app.float.button_width'))
+            //   .height($r('app.float.button_height'))
+            //   .margin({ top: $r('app.float.button_margin_top') })
+            //   .onClick(() => {
+            //     this.isPalindromicStringCustomDialogController?.open();
+            //   })
+            Button.onClick(() => {
+                this.standingCustomDialogController?.open();
+            });
+        }, Button);
+        // Button($r('app.string.MultiplicationTable'))
+        //   .width($r('app.float.button_width'))
+        //   .height($r('app.float.button_height'))
+        //   .margin({ top: $r('app.float.button_margin_top') })
+        //   .onClick(() => {
+        //     this.multiplicationTableCustomDialogController?.open();
+        //     let result = multiplicationTable();
+        //     for (let index = 0; index < result.length; index++) {
+        //       Logger.info(result[index].toString());
+        //     }
+        //   })
+        // Button($r('app.string.IsPalindromicString'))
+        //   .width($r('app.float.button_width'))
+        //   .height($r('app.float.button_height'))
+        //   .margin({ top: $r('app.float.button_margin_top') })
+        //   .onClick(() => {
+        //     this.isPalindromicStringCustomDialogController?.open();
+        //   })
+        Button.pop();
+        Column.pop();
+        Column.pop();
+    }
+    rerender() {
+        this.updateDirtyElements();
+    }
+    static getEntryName() {
+        return "Index";
+    }
+}
+registerNamedRoute(() => new Index(undefined, {}), "", { bundleName: "com.example.arktsalgorithm", moduleName: "entry", pagePath: "pages/Index", pageFullPath: "entry/src/main/ets/pages/Index", integratedHsp: "false", moduleType: "followWithHap" });
+//# sourceMappingURL=Index.js.mapÂ“Ùm/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entry/src/main/ets/common/constants/Constants.etsÙs/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entry/src/main/ets/view/DaffodilsNumberCustomDialog.etsÙm/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entry/src/main/ets/view/StandingsCustomDialog.etsÙ^/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entry/src/main/ets/pages/Index.etsÔrB›ªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo°belongModulePath§checker¬shouldEmitJs¥entryÃÂÙA/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entryÙ;/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm¥entry¥1.0.0Ô  ÙA/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entryÔrCÜ ®¬getNodeCount²getIdentifierCount®getSymbolCount¬getTypeCountµgetInstantiationCountµgetRelationCacheSizes±isUndefinedSymbol±isArgumentsSymbol¯isUnknownSymbol¯getMergedSymbol®getDiagnostics´getGlobalDiagnostics´getRecursionIdentity¶getUnmatchedProperties¹getTypeOfSymbolAtLocation¯getTypeOfSymbolÙ(getSymbolsOfParameterPropertyDeclaration·getDeclaredTypeOfSymbol³getPropertiesOfType±getPropertyOfTypeÙ"getPrivateIdentifierPropertyOfType·getTypeOfPropertyOfType²getIndexInfoOfType³getIndexInfosOfTypeºgetIndexInfosOfIndexSymbol³getSignaturesOfType²getIndexTypeOfType¬getIndexType¬getBaseTypes¸getBaseTypeOfLiteralType®getWidenedType³getTypeFromTypeNode°getParameterTypeÙ$getParameterIdentifierNameAtPosition¸getPromisedTypeOfPromise®getAwaitedType¸getReturnTypeOfSignature®isNullableType¯getNullableType²getNonNullableType²getNonOptionalType°getTypeArguments®typeToTypeNodeÙ$indexInfoToIndexSignatureDeclaration¿signatureToSignatureDeclaration²symbolToEntityName²symbolToExpression¬symbolToNodeÙ!symbolToTypeParameterDeclarations¼symbolToParameterDeclarationºtypeParameterToDeclaration±getSymbolsInScope³getSymbolAtLocation·getIndexInfosAtLocationÙ!getShorthandAssignmentValueSymbolÙ#getExportSpecifierLocalTargetSymbol·getExportSymbolOfSymbol±getTypeAtLocationÙ tryGetTypeAtLocationWithoutCheckºgetTypeOfAssignmentPatternÙ*getPropertySymbolOfDestructuringAssignment±signatureToString¬typeToString®symbolToStringµtypePredicateToString®writeSignature©writeType«writeSymbol²writeTypePredicate¼getAugmentedPropertiesOfType®getRootSymbols²getSymbolOfExpando±getContextualTypeÙ(getContextualTypeForObjectLiteralElementÙ#getContextualTypeForArgumentAtIndexÙ getContextualTypeForJsxAttribute²isContextSensitiveÙ!getTypeOfPropertyOfContextualTypeµgetFullyQualifiedNameÙ#tryGetResolvedSignatureWithoutCheck´getResolvedSignatureÙ/getResolvedSignatureForStringLiteralCompletionsÙ$getResolvedSignatureForSignatureHelpµgetExpandedParameters¹hasEffectiveRestParameterºcontainsArgumentsReference°getConstantValueµisValidPropertyAccessÙ#isValidPropertyAccessForCompletions»getSignatureFromDeclarationºisImplementationOfOverload¹getImmediateAliasedSymbol°getAliasedSymbol¯getEmitResolver²getExportsOfModule¿getExportsAndPropertiesOfModuleÙ forEachExportAndPropertyOfModule¯getSymbolWalker±getAmbientModules¹getJsxIntrinsicTagNamesAt³isOptionalParameter»tryGetMemberInModuleExportsÙ(tryGetMemberInModuleExportsAndProperties´tryFindAmbientModuleÙ(tryFindAmbientModuleWithoutAugmentations¯getApparentType¬getUnionType²isTypeAssignableTo³createAnonymousType¯createSignature¬createSymbol¯createIndexInfoªgetAnyType­getStringType­getNumberType±createPromiseType¯createArrayType¹getElementTypeOfArrayType®getBooleanType¬getFalseType«getTrueType«getVoidType°getUndefinedType«getNullType¯getESSymbolType¬getNeverType¯getOptionalType®getPromiseType²getPromiseLikeType´getAsyncIterableType²isSymbolAccessible«isArrayType«isTupleType¯isArrayLikeTypeÙ#isTypeInvalidDueToUnionDiscriminantºgetExactOptionalProperties¿getAllPossiblePropertiesOfTypesÙ(getSuggestedSymbolForNonexistentPropertyÙ#getSuggestionForNonexistentPropertyÙ,getSuggestedSymbolForNonexistentJSXAttributeÙ&getSuggestedSymbolForNonexistentSymbolÙ!getSuggestionForNonexistentSymbolÙ&getSuggestedSymbolForNonexistentModuleÙ!getSuggestionForNonexistentExportÙ+getSuggestedSymbolForNonexistentClassMember·getBaseConstraintOfType»getDefaultFromTypeParameter«resolveName¯getJsxNamespaceµgetJsxFragmentFactory¸getAccessibleSymbolChain»getTypePredicateOfSignature¹resolveExternalModuleName»resolveExternalModuleSymbol°tryGetThisTypeAt¹getTypeArgumentConstraint¸getSuggestionDiagnostics¸runWithCancellationTokenÙ3getLocalTypeParametersOfClassOrInterfaceOrTypeAlias´isDeclarationVisible´isPropertyAccessible»getTypeOnlyAliasDeclaration¿getMemberOverrideModifierStatusÙ!isTypeParameterPossiblyReferenced²getConstEnumRelate´clearConstEnumRelateµdeleteConstEnumRelateÙ$getTypeArgumentsForResolvedSignatureµgetCheckedSourceFilesÙ"collectHaveTsNoCheckFilesForLinter·clearQualifiedNameCache®isStaticRecord²isStaticSourceFile³createIntrinsicTypeÔ  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  ÃÃÚc/*
+ * Copyright (c) 2024 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import { CommonConstants } from '../common/constants/Constants';
+import Logger from '../common/utils/Logger';
+// import { multiplicationTable } from '../common/utils/Method';
+import { DaffodilsNumberCustomDialog } from '../view/DaffodilsNumberCustomDialog';
+// import { IsLeapYearCustomDialog } from '../view/IsLeapYearCustomDialog';
+// import { IsPalindromicStringCustomDialog } from '../view/IsPalindromicStringCustomDialog';
+// import { MultiplicationTableCustomDialog } from '../view/MultiplicationTableCustomDialog';
+import { StandingsCustomDialog} from '../view/StandingsCustomDialog';
+
+@Entry
+@Component
+struct Index {
+  daffodilsNumberCustomDialogController: CustomDialogController | null = new CustomDialogController({
+    builder: DaffodilsNumberCustomDialog(),
+    alignment: DialogAlignment.Center,
+    offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+  });
+  // multiplicationTableCustomDialogController: CustomDialogController | null = new CustomDialogController({
+  //   builder: MultiplicationTableCustomDialog(),
+  //   alignment: DialogAlignment.Center,
+  //   offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+  // });
+  // isPalindromicStringCustomDialogController: CustomDialogController | null = new CustomDialogController({
+  //   builder: IsPalindromicStringCustomDialog(),
+  //   alignment: DialogAlignment.Center,
+  //   offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+  // });
+  standingCustomDialogController: CustomDialogController | null = new CustomDialogController({
+    builder: StandingsCustomDialog(),
+    alignment: DialogAlignment.Center,
+    offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+  });
+  // isLeapYearCustomDialogController: CustomDialogController | null = new CustomDialogController({
+  //   builder: IsLeapYearCustomDialog(),
+  //   alignment: DialogAlignment.Center,
+  //   offset: { dx: CommonConstants.OFFSET_X, dy: CommonConstants.OFFSET_Y }
+  // });
+
+  build() {
+    Column() {
+      Text($r('app.string.ArkTS_Development_Case'))
+        .width(CommonConstants.PERCENT_NINETY)
+        .margin({
+          top: $r('app.float.text_margin_top'),
+          bottom: $r('app.float.text_margin_bottom'),
+          left: $r('app.float.text_margin_left'),
+          right: $r('app.float.text_margin_right')
+        })
+        .font({ size: $r('app.float.text_font_size'), weight: CommonConstants.FONT_WEIGHT_SEVEN_HUNDRED })
+      Column() {
+        Button($r('app.string.DaffodilsNumber'))
+          .width($r('app.float.button_width'))
+          .height($r('app.float.button_height'))
+          .onClick(() => {
+            this.daffodilsNumberCustomDialogController?.open();
+          })
+        // Button($r('app.string.MultiplicationTable'))
+        //   .width($r('app.float.button_width'))
+        //   .height($r('app.float.button_height'))
+        //   .margin({ top: $r('app.float.button_margin_top') })
+        //   .onClick(() => {
+        //     this.multiplicationTableCustomDialogController?.open();
+        //     let result = multiplicationTable();
+        //     for (let index = 0; index < result.length; index++) {
+        //       Logger.info(result[index].toString());
+        //     }
+        //   })
+        // Button($r('app.string.IsPalindromicString'))
+        //   .width($r('app.float.button_width'))
+        //   .height($r('app.float.button_height'))
+        //   .margin({ top: $r('app.float.button_margin_top') })
+        //   .onClick(() => {
+        //     this.isPalindromicStringCustomDialogController?.open();
+        //   })
+        Button($r('app.string.Standings'))
+          .width($r('app.float.button_width'))
+          .height($r('app.float.button_height'))
+          .margin({ top: $r('app.float.button_margin_top') })
+          .onClick(() => {
+            this.standingCustomDialogController?.open();
+          })
+        // Button($r('app.string.IsLeapYear'))
+        //   .width($r('app.float.button_width'))
+        //   .height($r('app.float.button_height'))
+        //   .margin({
+        //     top: $r('app.float.button_margin_top'),
+        //     bottom: $r('app.float.button_margin_bottom')
+        //   })
+        //   .onClick(() => {
+        //     this.isLeapYearCustomDialogController?.open();
+        //   })
+      }
+      .width(CommonConstants.PERCENT_FULL)
+    }
+    .justifyContent(FlexAlign.SpaceBetween)
+    .width(CommonConstants.PERCENT_FULL)
+    .height(CommonConstants.PERCENT_FULL)
+  }
+}ÀÔrD“½../common/constants/ConstantsÙ#../view/DaffodilsNumberCustomDialog½../view/StandingsCustomDialogÔrE—ªassertions¨external¢id¤meta±moduleSideEffectsªresolvedByµsyntheticNamedExportsAÂÙm/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entry/src/main/ets/common/constants/Constants.etsAÃªoh-resolveÂEAÂÙs/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entry/src/main/ets/view/DaffodilsNumberCustomDialog.etsAÃªoh-resolveÂEAÂÙm/Users/gamernotitle/Git/HWDev/ArkTSAlgorithm/ArkTSAlgorithm/entry/src/main/ets/view/StandingsCustomDialog.etsAÃªoh-resolveÂ“ÔrF–§version¤fileªsourceRoot§sources¥names¨mappings¨Index.js ‘©Index.etsÜ ù‘”    ‘” ˜”   ” ”	 	” ” ”   ”? ?”Ì@ Ì@’”   ”Ì@ Ì@˜”   ” ”	 	”$ $”& &”, ,”ÌQ ÌQ”ÌR ÌR’”   ”ÌK ÌK’”   ”Ì] Ì]’”   ”Ì] Ì]˜”   ” ”	 	” ”  ”& %”ÌE ÌD”ÌF ÌE’” ” ‘”  ’”9 ÌM”ÌO Ìc’” ” ’”# ”> (’”, ”ÌQ '‘” *–” ” ” ”& ”' ”- %Ü ” ” 
+” ” ” ” ”) !”* "”2 *”4 ,”6 .”8 0”ÌG ?”ÌH Ì@”ÌP ÌH”ÌR ÌJ’”2 *ÌF”ÌH *Ì\’” +” +’”# +”8 +"’”  ”Ìz  Ìl’” !”Ì@ !2’” "”7 ")’” #”Ì[ #ÌM’” $” $’” %”Ìz %Ìl’” &”Ì@ &2’” '”7 ')’” (”Ì[ (ÌM’” )” )’” *”. * ‘” +$–” ,” ,” ,”& ,”' ,”- ,%Ü ” -” -
+” -” -” -” -”) -!”* -"”2 -*”4 -,”6 -.”8 -0”ÌG -?”ÌH -Ì@”ÌP -ÌH”ÌR -ÌJ‘” ÌE’” /”Ìe /Ìc’” 0”+ 0)’” 1”+ 1)’” 2”ÌO 2ÌM’” 3”
+ 3‘” 5’” 6” 6
+˜” 6” 6
+” Ìm”! Ìm”" Ìm”+ Ìm”, Ìm”8 Ìm*˜” 6” 6
+” Ìn” Ìn
+” Ìn”( Ìn”) Ìn”5 Ìn'˜” 6” 6
+” Ìo” Ìo” Ìo”) Ìo”* Ìo”6 Ìo(’” 7” 7
+˜” 7” 7
+” 8	” 8” 8”& 8”' 8”5 8-•” 7” 7
+” 9	” 9” 9“” :
+” :”Ì… :.“” ;
+” ;”Ìˆ ;4“” <
+” <”Ì† <0“” =
+” =”Ì‡ =2‘” >	Ÿ” 7” 7
+” ?	” ?” ?” ?” ?”Ì ?4”Ì ?6”Ì– ?<”Ì˜ ?>”Ì§ ?ÌM”Ì¨ ?ÌN”ÌÁ ?Ìg”ÌÃ ?Ìi’” 7” 7
+’” Ì@” Ì@˜” Ì@” Ì@” Ìk” Ìk” Ìk”( Ìk”) Ìk”5 Ìk)’” ÌA” ÌA”” ÌA” ÌA” ÌB” ÌB”” ÌA” ÌA” ÌC” ÌC—” ÌA” ÌA” ÌD” ÌD” ÌD” ÌD”  ÌD˜” ÌE” ÌE” ÌE”: ÌE6”< ÌE8”Ì@ ÌE<”ÌB ÌE>”ÌC ÌE?’” ÌF
+” ÌF’” ÌA” ÌA’” ÌG”; ÌG7’” ÌH”5 ÌH1’” ÌI”7 ÌI3’” ÌJ”ÌD ÌJÌ@’” ÌK”! ÌK’” ÌL”ÌJ ÌLÌF’” ÌM”6 ÌM2’” ÌN”ÌH ÌNÌD’” ÌO”; ÌO7’” ÌP” ÌP’” ÌQ” ÌQ’” ÌR”; ÌR7’” ÌS”5 ÌS1’” ÌT”7 ÌT3’” ÌU”ÌD ÌUÌ@’” ÌV”! ÌV’” ÌW”ÌJ ÌWÌF’” ÌX” ÌX’” ÌY” ÌY’” ÌG”; ÌG7’” ÌH”5 ÌH1’” ÌI”7 ÌI3’” ÌJ”ÌD ÌJÌ@’” ÌK”! ÌK’” ÌL”ÌJ ÌLÌF’” ÌM”6 ÌM2’” ÌN”ÌH ÌNÌD’” ÌO”; ÌO7’” ÌP” ÌP’” ÌQ” ÌQ’” ÌR”; ÌR7’” ÌS”5 ÌS1’” ÌT”7 ÌT3’” ÌU”ÌD ÌUÌ@’” ÌV”! ÌV’” ÌW”ÌJ ÌWÌF’” ÌX” ÌX”” ÌY” ÌY” ÌZ” ÌZ’” ÌG”; ÌG7’” ÌH”5 ÌH1’” ÌI”7 ÌI3’” ÌJ”ÌD ÌJÌ@’” ÌK”! ÌK’” ÌL”ÌJ ÌLÌF’” ÌM”6 ÌM2’” ÌN”ÌH ÌNÌD’” ÌO”; ÌO7’” ÌP” ÌP’” ÌQ” ÌQ’” ÌR”; ÌR7’” ÌS”5 ÌS1’” ÌT”7 ÌT3’” ÌU”ÌD ÌUÌ@’” ÌV”! ÌV’” ÌW”ÌJ ÌWÌF’” ÌX” ÌX”” ÌY” ÌY” Ì[” Ì[’” ÌG”; ÌG7’” ÌH”5 ÌH1’” ÌI”7 ÌI3’” ÌJ”ÌD ÌJÌ@’” ÌK”! ÌK’” ÌL”ÌJ ÌLÌF’” ÌM”6 ÌM2’” ÌN”ÌH ÌNÌD’” ÌO”; ÌO7’” ÌP” ÌP’” ÌQ” ÌQ’” ÌR”; ÌR7’” ÌS”5 ÌS1’” ÌT”7 ÌT3’” ÌU”ÌD ÌUÌ@’” ÌV”! ÌV’” ÌW”ÌJ ÌWÌF’” ÌX” ÌX™” ÌY” ÌY” Ì\” Ì\” Ì\” Ì\” Ì\”Ì‘ Ì\:”Ì“ Ì\<’” ÌG”; ÌG7’” ÌH”5 ÌH1’” ÌI”7 ÌI3’” ÌJ”ÌD ÌJÌ@’” ÌK”! ÌK’” ÌL”ÌJ ÌLÌF’” ÌM”6 ÌM2’” ÌN”ÌH ÌNÌD’” ÌO”; ÌO7’” ÌP” ÌP’” ÌQ” ÌQ’” ÌR”; ÌR7’” ÌS”5 ÌS1’” ÌT”7 ÌT3’” ÌU”ÌD ÌUÌ@’” ÌV”! ÌV’” ÌW”ÌJ ÌWÌF’” ÌX” ÌX—” ÌY” ÌY” Ì]” Ì]” Ì]” Ì]”  Ì]˜” Ì^” Ì^” Ì^”3 Ì^/”5 Ì^1”9 Ì^5”; Ì^7”< Ì^8’” Ì_
+” Ì_’” ÌG”7 ÌG7’” ÌH”1 ÌH1’” ÌI”3 ÌI3’” ÌJ”Ì@ ÌJÌ@’” ÌK” ÌK’” ÌL”ÌF ÌLÌF’” ÌM”2 ÌM2’” ÌN”ÌD ÌNÌD’” ÌO”7 ÌO7’” ÌP” ÌP’” ÌQ” ÌQ’” ÌR”7 ÌR7’” ÌS”1 ÌS1’” ÌT”3 ÌT3’” ÌU”Ì@ ÌUÌ@’” ÌV” ÌV’” ÌW”ÌF ÌWÌF’” ÌX” ÌX’” ÌY” ÌY’” Ì@” Ì@’” 6” 6
+‘” ÌpÔrG–§version¤file§sources®sourcesContent¥names¨mappingsÀ‘À‘ÀÜ‘”    ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”  	 ‘”  
+ ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”    ‘”  ! ‘”  " ‘”  # ‘”  $ ‘”  % ‘”  & ‘”  ' ‘”  ( ‘”  ) ‘”  * ‘”  + ‘”  , ‘”  - ‘”  . ‘”  / ‘”  0 ‘”  1 ‘”  2 ‘”  3 ‘”  4 ‘”  5 ‘”  6 ‘”  7 ‘”  8 ‘”  9 ‘”  : ‘”  ; ‘”  < ‘”  = ‘”  > ‘”  ? ‘”  Ì@ ‘”  ÌA ‘”  ÌB ‘”  ÌC ‘”  ÌD ‘”  ÌE ‘”  ÌF ‘”  ÌG ‘”  ÌH ‘”  ÌI ‘”  ÌJ ‘”  ÌK ‘”  ÌL ‘”  ÌM ‘”  ÌN ‘”  ÌO ‘”  ÌP ‘”  ÌQ ‘”  ÌR ‘”  ÌS ‘”  ÌT ‘”  ÌU ‘”  ÌV ‘”  ÌW ‘”  ÌX ‘”  ÌY ‘”  ÌZ ‘”  Ì[ ‘”  Ì\ ‘”  Ì] ‘”  Ì^ ‘”  Ì_ ‘”  Ì` ‘”  Ìa ‘”  Ìb ‘”  Ìc ‘”  Ìd ‘”  Ìe ‘”  Ìf ‘”  Ìg ‘”  Ìh ‘”  Ìi ‘”  Ìj ‘”  Ìk ‘”  Ìl ‘”  Ìm ‘”  Ìn ‘”  Ìo ‘”  Ìp ‘”  Ìq ‘”  Ìr ‘”  Ìs ‘”  Ìt ‘”  Ìu ‘”  Ìv ‘”  Ìw ‘”  Ìx ‘”  Ìy ‘”  Ìz ‘”  Ì{ ‘”  Ì| ‘”  Ì} ‘”  Ì~ ‘”  Ì ‘”  Ì€ ‘”  Ì ‘”  Ì‚ ‘”  Ìƒ ‘”  Ì„ ‘”  Ì… ‘”  Ì† ‘”  Ì‡ ‘”  Ìˆ ‘”  Ì‰ ‘”  ÌŠ ‘”  Ì‹ ‘”  ÌŒ ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì‘ ‘”  Ì’ ‘”  Ì“ ‘”  Ì” ‘”  Ì• ‘”  Ì– ‘”  Ì— ‘”  Ì˜ ‘”  Ì™ ‘”  Ìš ‘”  Ì› ‘”  Ìœ ‘”  Ì ‘”  Ì ‘”  ÌŸ ‘”  Ì  ‘”  Ì¡ ‘”  Ì¢ ‘”  Ì£ ‘”  Ì¤ ‘”  Ì¥ ‘”  Ì¦ ‘”  Ì§ ‘”  Ì¨ ‘”  Ì© ‘”  Ìª ‘”  Ì« ‘”  Ì¬ ‘”  Ì­ ‘”  Ì® ‘”  Ì¯ ‘”  Ì° ‘”  Ì± ‘”  Ì² ‘”  Ì³ ‘”  Ì´ ‘”  Ìµ ‘”  Ì¶ ‘”  Ì· ‘”  Ì¸ ‘”  Ì¹ ‘”  Ìº ‘”  Ì» ‘”  Ì¼ ‘”  Ì½ ‘”  Ì¾ ‘”  Ì¿ ‘”  ÌÀ ‘”  ÌÁ ‘”  ÌÂ ‘”  ÌÃ ‘”  ÌÄ ‘”  ÌÅ ‘”  ÌÆ ‘”  ÌÇ ‘”  ÌÈ ‘”  ÌÉ ‘”  ÌÊ ‘”  ÌË ‘”  ÌÌ ‘”  ÌÍ ‘”  ÌÎ ‘”  ÌÏ ‘”  ÌĞ ‘”  ÌÑ ‘”  ÌÒ ‘”  ÌÓ ‘”  ÌÔ ‘”  ÌÕ ‘”  ÌÖ ‘”  Ì× ‘”  ÌØ ‘”  ÌÙ ‘”  ÌÚ ‘”  ÌÛ ‘”  ÌÜ ‘”  Ìİ ‘”  ÌŞ ‘”  Ìß ‘”  Ìà ‘”  Ìá ‘”  Ìâ ‘”  Ìã ‘”  Ìä ‘”  Ìå ‘”  Ìæ ‘”  Ìç ‘”  Ìè ‘”  Ìé ‘”  Ìê ‘”  Ìë ‘”  Ìì ‘”  Ìí ‘”  Ìî ‘”  Ìï ‘”  Ìğ ‘”  Ìñ ‘”  Ìò ‘”  Ìó ‘”  Ìô ‘”  Ìõ ‘”  Ìö ‘”  Ì÷ ‘”  Ìø ‘”  Ìù ‘”  Ìú ‘”  Ìû ‘”  Ìü ‘”  Ìı ‘”  Ìş ‘”  Ìÿ ‘”  Í  ‘”  Í ÔrH’§missing¦pluginÃ¦genAbcÂÔ  ÔrI”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache“ÔrJ•¤type¥start£endªspecifiers¦source±ImportDeclarationÍîÍ.‘ÔrK•¤type¥start£end¨imported¥local¯ImportSpecifierÍ÷ÍÔrL”¤type¥start£end¤nameªIdentifierÍ÷Í¯CommonConstantsLªIdentifierÍ÷Í¯CommonConstantsÔrM•¤type¥start£end¥value£raw§LiteralÍÍ-½../common/constants/Constants¿'../common/constants/Constants'J±ImportDeclarationÍrÍÄ‘K¯ImportSpecifierÍ{Í–LªIdentifierÍ{Í–»DaffodilsNumberCustomDialogLªIdentifierÍ{Í–»DaffodilsNumberCustomDialogM§LiteralÍÍÃÙ#../view/DaffodilsNumberCustomDialogÙ%'../view/DaffodilsNumberCustomDialog'J±ImportDeclarationÍÑÍ‘K¯ImportSpecifierÍÚÍïLªIdentifierÍÚÍïµStandingsCustomDialogLªIdentifierÍÚÍïµStandingsCustomDialogM§LiteralÍ÷Í½../view/StandingsCustomDialog¿'../view/StandingsCustomDialog'

@@ -1,0 +1,1 @@
+[{"time":"2025-11-04T06:51:57.457Z","category":"etsTransform","level":"warn","msg":"\u001b[33mArkTS:WARN File: /Users/gamernotitle/Git/HWDev/ToDoList/entry/src/main/ets/pages/ToDoListPage.ets:42:9\n Property 'content' is private and can not be initialized through the component constructor.\u001b[39m","type":"plugin_log"}]

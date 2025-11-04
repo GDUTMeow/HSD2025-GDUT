@@ -1,0 +1,1 @@
+struct preview{build(){Text(this.item.price).fontColor(Color.Red).alignSelf(ItemAlign.Start)}}
